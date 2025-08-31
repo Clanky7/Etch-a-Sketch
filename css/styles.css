@@ -4,24 +4,159 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@600&display=swap');
+
 body{
     display: flex;
-    border: 5px solid red;
-    min-height:100vh;
     justify-content: center;
+    background-color: #E0F7F7;
+}
+
+.container{
+    background-color: #662D91;
+    padding: 2.2rem;
+    border-radius: 3%;  
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 4rem;
+    border: 5px solid red;
+}
+
+.top{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #35393c;
+    border-radius: 1rem;
+}
+.screen{
+    display: flex;
+    justify-content: center;
+    padding: 1.5rem 1.5rem 0 0.8rem ; 
+    gap: 1rem;
+}
+.left-screen{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    gap: 0.5rem;
     align-items: center;
 }
 
-.frame{
-    border: 5px solid black;
-    width: 670px;
-    height: 670px;
+.power{
+    text-align: center;
+    font-size: 1rem;
+    color: #E0F7F7;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.dot{
+    background-color: red;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+}
+
+.screen-bot{
+    padding-bottom: 1rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Pacifico', cursive;
+    color: #FFD700;
+    padding-top: 16px;
+    font-size: 1.5rem;
+}
+
+.interface{
+    display: flex;
+    flex-direction: column;
+    /* flex-grow: 1;  */
+    border: 5px solid red;
+}
+
+.controls{
+    display: flex;
+    justify-content: space-around;
+    flex:1;
+    gap:2.5rem;
+    align-items: center;
+}
+
+
+.cross{
+    font-size: 11rem;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #D23F3F; 
+}
+
+.right{
+    display: flex;
+    justify-content: center;
+    gap:0.8rem;
+    /* margin: 0.5rem; */
+    color:#e0e0e0;
+    font-family: 'Baloo 2', cursive;
+}
+
+
+.right button{ 
+    border-radius: 50%;
+    padding: 1.33rem;
+    background-color: #D23F3F;
+    border: 2px solid #a02a2a;
+}
+
+.shade,
+.random,
+.black{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.random{
+    padding-top: 2rem;
+}
+
+.shade{
+    padding-top: 1rem;
+}
+
+
+.bot-section{
+    display: flex;
+    justify-content: center;
+    gap:3em;
+    font-family: 'Baloo 2', cursive;
+    margin-bottom: 2rem;
+}
+
+.grid-section{
+
+    width: 350px;
+    height: 350px;
     display: flex;
     flex-wrap: wrap;
-    align-items: flex-start;
+    /* align-items: flex-start; */
+    background-color: #e9d8a6;    
+}
+
+.bot-section button{
+    font-family: 'Fredoka', sans-serif;
+    padding: 0.5rem 2rem;
+    background-color: #2B2B2B   ;
+    border-radius: 100%;
+}
+
+.bot-section p{
+    text-align: center;
+    color: #e0e0e0;
+    font: 1.2rem;
     
 }
 
 .square{
-    border: 1px solid black;  
+    border: 1px solid black;
+    
 }
